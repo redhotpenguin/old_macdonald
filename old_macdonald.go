@@ -18,20 +18,6 @@ var things = map[string]Thing{
 	"bar":  Thing{drinks},
 }
 
-func eieio(c chan string) {
-
-	fmt.Println("eieio executing")
-	d := time.Duration(1) * time.Second
-	time.Sleep(d)
-
-	for {
-		select {
-		default:
-			fmt.Println(<-c)
-		}
-	}
-}
-
 func main() {
 
 	// what day of the week is it?
@@ -50,7 +36,7 @@ func main() {
 
 	// sample if else usage
 	if today == "Saturday" {
-        
+            
 	} else {
 
 	}
